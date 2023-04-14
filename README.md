@@ -1,15 +1,9 @@
 # cmsc388T-web-template
 
-## Color Family
-Light yellow: #FAF8D4
+## Terpconnect 
+https://terpconnect.umd.edu/~klee9765/cmsc389T-web-template/
 
-Almond: #EBDCCB
+## GitHub
+https://4delta6.github.io/cmsc389T-web-template/
+I changed the color scheme of the website
 
-Dun: #C3BAAA
-
-Taupe Gray: #91818A
-
-Rose quartz: #B2A3B5
-
-## CSS
-.img -> where you can adjust image size
