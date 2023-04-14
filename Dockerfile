@@ -5,10 +5,11 @@
 #the docker lecture will help you complete this file 
 #there should be a total of 9 lines
 FROM node:10-alpine
-WORKDIR /app
-RUN chown -R node:node /app
+RUN mkdir -p /home/node/app && chown -R node:node /home/node/app
+WORKDIR /home/node/app
 COPY package*.json ./
+USER node
 RUN npm install
 EXPOSE 8080
-USER node
-CMD ["npm", "start"]
+COPY --chown=node:node . .
+CMD node app.js
