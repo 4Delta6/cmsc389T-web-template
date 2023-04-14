@@ -11,7 +11,7 @@
 
     <nav class="same-line">
         <div class="topnav left">
-            <a href="#home">YOUR NAME</a>
+            <a href="#home">Keith K. Lee</a>
         </div>
         <div class="topnav right">
             <a href="#home">Home</a>
@@ -28,9 +28,9 @@
         <div class="same-line-panel">
             <img id="image" src=profile.png>
             <div class="center">
-                <h1>YOUR NAME</h1>
+                <h1>Keith K. Lee</h1>
                 <h2>Undergraduate Student</h2>
-                <h3>Majors, Minors</h3>
+                <h3>Computer Science Major, Math Minor</h3>
             </div>
 
         </div>
@@ -42,7 +42,18 @@
         <div class="same-line-panel reveal">
             <img id="logo" src=logo.png>
             <div class="panel">
-                <p>Put your Bio Here</p>
+                <p>
+                    Hello, my name is Keith Lee and am currently pursuing a Bachelor's in Computer Science and A Math Minor at the University of 
+                    Maryland - College Park. During my time as a SWE intern at the Johns Hopkins Applied Physics Lab, I focused on automating 
+                    the compliance auditing processes to a networking standard in Python as well as creating virtual testing environments with 
+                    Cisco Modeling Lab. On the side, I worked with other interns to develop a full-stack application that showcased our 
+                    implemetation of signal encoding and decoding to send data between 2 software defined radios using Vue.js, Flask, Axios, and Python.
+                    <br><br>
+                    Apart from my work experience, I have completed several projects. I reverse engineered a chat server using tcpdump and Wireshark 
+                    to analyze the TCP stream of bytes and decode custom headers for each chat command for a chat client. With each command structure, 
+                    I was able re-create the chat server with full functionality in Rust. I also re-created the Linux File System and Makefile using 
+                    C, GDB, and Valgrind. The file system supported the basic functionality of touch, cd, ls, pwd, mkdir, and rm.
+                </p>
             </div>
 
         </div>
@@ -51,17 +62,42 @@
         <div class="container">
             <h1 class="section-header">Projects</h1>
             <div class="row">
-                <div class="column reveal" style="background-color:#A4969B;">
-                    <h2>Project 1 Title</h2>
-                    <p>Description of Project 1...</p>
+                <div class="column reveal" style="background-color:#6B7AA1;">
+                    <h2>Reverse Engineering Chat Server</h2>
+                    <p>
+                        I utilized tcp dump in conjunction with Wireshark to capture packets sent from a chat client to a chat server. 
+                        By analyzing packets based on each chat command and different combinations of input, I was able to decode the 
+                        commands header structure. The structure was typically 3 bytes of padding, 1 byte for the size of the message, 
+                        3 bytes to represent a constant/server identifier, then x bytes for the data payload which was typically split into 
+                        1 byte for argument length then the data. With this structure, I was able to recreate the chat servers full 
+                        functionality in Rust.
+                        <br><br>
+                        In Rust, I was able to utilize ARCs, Mutexes, and Threads to handle multiple clients at once to provide the
+                        functionality of direct messaging, joining/leaving chat rooms, listing out the users in a chat room/entire server, 
+                        and changing your nickname. 
+
+                    </p>
                 </div>
-                <div class="column reveal" style="background-color:#BFB5B9;">
-                    <h2>Project 2 Title</h2>
-                    <p>Description of Project 2...</p>
+                <div class="column reveal" style="background-color:#C1CFC0;">
+                    <h2>Compliance Automation</h2>
+                    <p>
+                        I worked with a small agile team to design and develop a proof of concept to test the feasibility of 
+                        automating compliance checking to a specific standard [Standard redacted due to NDA]. My team and I utilized regular expressions 
+                        and developed data structures to try to automate compliance checking to each standard given a set of limited information in Python. 
+                        Through my understanding of Cisco Products as well as various networking topics such as ACLs, BGP, IP, etc, we were able to deliver 
+                        a report of our findings on time and on budget. I also created a test-bed of networks in Cisco Modeling Lab to simulate how our product 
+                        would be deployed given some semi-realistic router configurations.
+                        
+                    </p>
                 </div>
-                <div class="column reveal" style="background-color:#D1CACD;">
-                    <h2>Project 3 Title</h2>
-                    <p>Description of Project 3...</p>
+                <div class="column reveal" style="background-color:#E7E0C9;">
+                    <h2>Linux File System and Makefile Simulator</h2>
+                    <p>
+                        • Technologies Used: C, Emacs, GDB, Valgrind <br>
+                        • Designed a robust file system and makefile using custom structs and pointers <br>
+                        • Implemented 6 fundamental Linux commands (touch, cd, ls, pwd, mkdir,rm)
+                        
+                    </p>
                 </div>
             </div>
         </div>
@@ -69,10 +105,10 @@
 </body>
 <footer>
     <div class="leftFooter">
-        YOUREMAIL@EMAIL.COM
+        Keith.Kit.Lee@gmail.com
     </div>
     <div class="rightFooter">
-        <a href="https://www.google.com/" class="fa fa-github" style="font-size:36px"></a>
+        <a href="https://github.com/4Delta6" class="fa fa-github" style="font-size:36px"></a>
 
     </div>
     <div class="rightFooterr">

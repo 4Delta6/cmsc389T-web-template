@@ -28,7 +28,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: #655560;
+    background: #4D4D4D;
     padding: 20px;
     text-align: center;
 
@@ -41,7 +41,7 @@ header {
     bottom: 0;
     width: 100%;
     background-color: #655560;
-    color: white;
+    color: #4D4D4D;
     text-align: center;
     padding: 14px 16px;
 }
